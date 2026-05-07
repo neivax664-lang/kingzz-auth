@@ -5,8 +5,7 @@ const app = express();
 app.use(express.json());
 
 const supabase = createClient(
-  "YOUR_SUPABASE_URL",
-  "YOUR_SUPABASE_ANON_KEY"
+  "https://pywcbzknqpemmngxnpub.supabase.co/rest/v1/",  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5d2NiemtucXBlbW1uZ3hucHViIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxMjIwNjcsImV4cCI6MjA5MzY5ODA2N30.pxuf_CGEsmBmo3RwJEQEAk9V6ctf-vQRI8XhXhYEZ_w"
 );
 
 app.post("/check-key", async (req, res) => {
